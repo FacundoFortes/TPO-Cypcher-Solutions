@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/main.css">
+        <script src="https://kit.fontawesome.com/18cef187a7.js" crossorigin="anonymous"></script>
+        <script>
+            function darkMode() {
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.classList.toggle("dark-mode");
+            }
+        </script>
+        <title>Cypher Solutions</title>
+    </head>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="navi" href="index.html" >Home </a>
+        <a class="navi" href="about.html">About </a> 
+        <a class="navi" href="form.html">Consultas</a> 
+        <a class="navi" href="location.html"> Sucursales </a>
+      </div>
+
+      <header class="cabeza">
+        <div class="header-content">
+        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <button class="nightbtn" onclick="darkMode()"></button>
+        <h1>
+            <b>CYPHER SOLUTIONS</b>
+        </h1>
+        </div>
+    </header>
+<body>
+  <menu>
+  <div class="elcontainer">
+    <div class="col-s-12"><h1>Streamline solutions</h1></div>
+    <div id="paral1" class="parallax"></div> 
+    <div class="item2"><h2>Nos especializamos en:</h2>    
+        <ul class="lista">
+        <li>Diseño e impresion 3D</li>
+        <li>Modelado 3D y Unreal Engine</li>
+        <li>Consultoria</li>
+        <li>ERP</li>
+        <li>Relevamiento de procesos industriales</li>
+      </ul></div>
+    </div>
+    <div id="paral2" class="parallax">
+      <div class="spacer"></div>
+      <div class="sectionholder"><center><h1>Modelado e impresion 3D en ingenieria</h1></center></div>
+    </div>
+    <div id="paral3" class="parallax">
+      <div class="spacer"></div>
+      <div class="sectionholder"><center><h1>Prototipado en Unreal Engine</h1></center></div>
+    </div>
+    <div id="paral4" class="parallax">
+      <div class="spacer"></div>
+      <div class="sectionholder"><center><h1>Consulturia Industrial</h1></center></div>
+    </div>
+    <div id="paral5" class="parallax">
+      <div class="spacer"></div>
+      <div class="sectionholder"><center><h1>Herramientas de Planificación</h1></center></div>
+    </div>       
+  </menu>
+</body>
+<footer>
+  <div class="footer-content">
+  <a class="icons" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"> </i> </a> 
+  <a class="icons" href="https://www.facebook.com/facu.fortes" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  <a class="icons" href="https://www.pinterest" target="_blank"> <i class="fa fa-pinterest" aria-hidden="false"></i></a>
+  <a class="icons" href="https://www.instagram.com/facu.fortes/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+  <a class="icons" href="https://www.linkedin.com/in/facundo-fortes-del-campo-33286417b/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+  <center>Derechos reservados @2022</center>
+  </div>
+</footer>
+<script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "25vh";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+</script>

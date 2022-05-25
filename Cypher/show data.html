@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/18cef187a7.js" crossorigin="anonymous"></script>
+        <script>
+          function darkMode() {
+          var element = document.body;
+          var content = document.getElementById("DarkModetext");
+          element.classList.toggle("dark-mode");
+          }
+      </script>
+        <title>Cypher Solutions</title>
+    </head>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="navi" href="index.html" >Home </a>
+      <a class="navi" href="about.html">About </a> 
+      <a class="navi" href="form.html">Consultas</a> 
+      <a class="navi" href="location.html"> Sucursales </a>
+    </div>
+
+    <header class="cabeza">
+      <div class="header-content">
+      <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+      <button class="nightbtn" onclick="darkMode()"></button>
+      <h1>
+          <b>CYPHER SOLUTIONS</b>
+      </h1>
+      </div>
+  </header>
+<body>
+<p align=center>&nbsp;</p>
+<h1 align=center><font size="+1">The following information has been sent as your
+  feedback:</font></h1>
+
+<table border="1" align=center width="226">
+  <tr>
+    <th align="center">Form Field</th>
+    <th align="center">Field Value</th>
+  </tr>
+
+<script language="javascript">
+var args = location.search.substr(1).split('&');
+for (var i = 0; i < args.length; ++i) {
+  var parts = args[i].split('=');
+  if (parts != null) {
+    var field = parts[0];
+    var value = parts[1];
+    if (value == null) {
+      value = "null"
+    }
+    else {
+      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+    }
+
+    document.writeln('<tr><td align="center">' + field + '</td>');
+    document.writeln('<td align="center">' + value + '</td></tr>');
+  }
+}
+</script>
+
+<noscript>
+<tr><td>
+<p>You need to turn on Javascript in your browser.</p>
+
+<p>In Microsoft Internet Explorer 4 or greater:</p>
+<ul>
+<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+<li>Click on the "Security" tab.</li>
+<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+and then click on "Settings...".)</li>
+<li>Under "Active scripting" make sure "Enable" is selected.</li>
+</ul>
+
+<p>In Netscape version 4 or greater:</p>
+<ul>
+<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+<li>Click the <b>OK</b> button.</li>
+</ul>
+
+</td></tr>
+</noscript>
+
+</table>
+</body>
+<footer>
+  <div class="footer-content">
+  <a class="icons" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"> </i> </a> 
+  <a class="icons" href="https://www.facebook.com/facu.fortes" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  <a class="icons" href="https://www.pinterest" target="_blank"> <i class="fa fa-pinterest" aria-hidden="false"></i></a>
+  <a class="icons" href="https://www.instagram.com/facu.fortes/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+  <a class="icons" href="https://www.linkedin.com/in/facundo-fortes-del-campo-33286417b/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+  <center>Derechos reservados @2022</center>
+  </div>
+</footer>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "25vh";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
